@@ -9,15 +9,17 @@ import java.util.List;
 @RestController
 public class HelloController {
     @GetMapping("/get")
-    public List<AccountInput>getAllAccount(){
+    public List<AccountInput> getAllAccount() {
         return AccountServices.getAllAccount();
     }
+
     @GetMapping("account/{accountId}")
-    public AccountInput getAccountDetails(@PathVariable int accountId){
+    public AccountInput getAccountDetails(@PathVariable int accountId) {
         return AccountServices.getAccountDetails(accountId);
     }
+
     @PostMapping("/addAccount")
-    public AccountInput addAccount(@RequestBody AccountInput accountInput){
+    public AccountInput addAccount(@RequestBody AccountInput accountInput) {
         return AccountServices.addAccount(accountInput);
     }
 }
