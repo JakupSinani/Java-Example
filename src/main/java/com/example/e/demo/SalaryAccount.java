@@ -27,7 +27,7 @@ public class SalaryAccount extends Account {
         System.out.println("withdrawn: " + amount);
         System.out.println("balance after withdrawl is: " + amountt);
         setBalance(amountt);
-
+        //ky returni perdoret per testim kur e perdorish assertEquals e kthen ni numer prsh sa de heke pi terhekjes t pareve
         return amountttt;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.e.demo;
+package com.example.e.demo.SpringBootMethod;
 
 import java.util.List;
 

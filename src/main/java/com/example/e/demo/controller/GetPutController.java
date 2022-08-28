@@ -1,13 +1,13 @@
 package com.example.e.demo.controller;
 
-import com.example.e.demo.AccountInput;
-import com.example.e.demo.AccountServices;
+import com.example.e.demo.SpringBootMethod.AccountInput;
+import com.example.e.demo.SpringBootMethod.AccountServices;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-public class HelloController {
+public class GetPutController {
     @GetMapping("/get")
     public List<AccountInput> getAllAccount() {
         return AccountServices.getAllAccount();
